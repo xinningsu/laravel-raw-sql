@@ -24,7 +24,7 @@ use App\Models\User;
 
 echo DB::table('user')->where('id', 1)->where('verified', 1)->toSql();
 // or 
-echo User::where('id', 1)->toSql();
+echo User::where('id', 1)->where('verified', 1)->toSql();
 ```
 
 The output would be something like this with `?`:
@@ -44,7 +44,7 @@ Now with this package, we can get the raw sql via toSql method with `true` as fi
 ```php
 echo DB::table('user')->where('id', 1)->where('verified', 1)->toSql(true);
 // or 
-echo User::where('id', 1)->toSql(true);
+echo User::where('id', 1)->where('verified', 1)->toSql(true);
 ```
 
 Will output
