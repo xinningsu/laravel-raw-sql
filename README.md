@@ -1,6 +1,6 @@
 # Laravel Raw SQL
 
-Get raw sql from laravel query builder via toSql method.
+Get raw sql from laravel query builder via toRawSql method.
 
 [![MIT licensed](https://img.shields.io/badge/license-MIT-blue.svg)](./LICENSE)
 [![Build Status](https://api.travis-ci.org/xinningsu/laravel-raw-sql.svg?branch=master)](https://travis-ci.org/xinningsu/laravel-raw-sql)
@@ -39,12 +39,12 @@ I exactly want the raw SQL like this:
 select * from `user` where `id` = 1 and `verified` = 1
 ```
 
-Now with this package, we can get the raw sql via toSql method with `true` as first parameter.
+Now with this package, we can get the raw sql via toRawSql.
 
 ```php
-echo DB::table('user')->where('id', 1)->where('verified', 1)->toSql(true);
+echo DB::table('user')->where('id', 1)->where('verified', 1)->toRawSql();
 // or 
-echo User::where('id', 1)->where('verified', 1)->toSql(true);
+echo User::where('id', 1)->where('verified', 1)->toRawSql();
 ```
 
 Will output

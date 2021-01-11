@@ -1,6 +1,6 @@
 {
     "name": "xinningsu/laravel-raw-sql",
-    "description": "Get raw sql from laravel query builder via toSql method.",
+    "description": "Get raw sql from laravel query builder via toRawSql method.",
     "license": "MIT",
     "authors": [
         {
@@ -30,7 +30,7 @@
     "extra": {
         "laravel": {
             "providers": [
-                "Sulao\\RawSql\\RawSqlServiceProvider"
+                "Sulao\\RawSql\\ServiceProvider"
             ]
         }
     }
