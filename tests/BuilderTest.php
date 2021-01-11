@@ -14,7 +14,7 @@ class BuilderTest extends \PHPUnit\Framework\TestCase
         $builder = $this->getBuilder('mysql');
         $sql = $builder->from('user')
             ->where('id', 1)
-            ->where('verified', true)
+            ->where('verified', 1)
             ->where('verified_at', '>', new DateTime('2021-01-09 23:23:00'))
             ->toRawSql();
         $this->assertEquals(

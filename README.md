@@ -63,7 +63,7 @@ composer require xinningsu/laravel-raw-sql
 
 ```
 
-As this package using laravel [Package Discovery](https://laravel.com/docs/8.x/packages#package-discovery) to discover `Sulao\RawSql\RawSqlServiceProvider::class`, so there's no need to do anything else, please use it directly.
+As this package using laravel [Package Discovery](https://laravel.com/docs/8.x/packages#package-discovery) to discover `Sulao\RawSql\ServiceProvider::class`, so there's no need to do anything else, please use it directly.
 
 
 
