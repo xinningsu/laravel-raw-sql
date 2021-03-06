@@ -1,6 +1,14 @@
 {
     "name": "xinningsu/laravel-raw-sql",
     "description": "Get raw sql from laravel query builder via toRawSql method.",
+    "keywords": [
+        "laravel",
+        "query builder",
+        "sql",
+        "raw sql",
+        "laravel raw sql"
+    ],
+    "homepage": "https://github.com/xinningsu/laravel-raw-sql",
     "license": "MIT",
     "authors": [
         {
